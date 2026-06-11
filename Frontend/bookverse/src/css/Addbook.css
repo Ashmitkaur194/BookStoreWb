@@ -1,0 +1,172 @@
+
+.addbook-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #141e30,
+        #243b55
+    );
+
+    padding:20px;
+}
+
+.addbook-box{
+
+    width:400px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(15px);
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border:
+    1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    animation:fadeIn 0.7s ease;
+}
+
+.addbook-box h1{
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+    letter-spacing:1px;
+}
+
+.addbook-box input{
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:
+    rgba(255,255,255,0.12);
+
+    color:white;
+
+    font-size:15px;
+
+    transition:0.3s;
+}
+
+.addbook-box input::placeholder{
+
+    color:#ddd;
+}
+
+.addbook-box input:focus{
+
+    transform:scale(1.03);
+
+    background:
+    rgba(255,255,255,0.18);
+
+    box-shadow:
+    0 0 12px rgba(255,255,255,0.2);
+}
+
+.addbook-box input[type="file"]{
+
+    padding:10px;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+.addbook-box button{
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.addbook-box button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 8px 20px rgba(0,114,255,0.4);
+}
+
+.addbook-box button:active{
+
+    transform:scale(0.98);
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+
+}
+
+@media(max-width:500px){
+
+    .addbook-box{
+
+        width:100%;
+    }
+
+}
